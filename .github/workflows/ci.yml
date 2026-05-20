@@ -28,10 +28,10 @@ jobs:
         run: npm ci --legacy-peer-deps
 
       - name: Install rolldown Linux binding
-        run: npm install @rolldown/binding-linux-x64-gnu --no-save
+        run: npm install @rolldown/binding-linux-x64-gnu --no-save --legacy-peer-deps
 
       - name: Install lightningcss Linux binding
-        run: npm install lightningcss-linux-x64-gnu --no-save
+        run: npm install lightningcss-linux-x64-gnu --no-save --legacy-peer-deps
 
       - name: Lint frontend
         run: npm run lint
