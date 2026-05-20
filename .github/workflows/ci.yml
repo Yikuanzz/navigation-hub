@@ -30,7 +30,12 @@ jobs:
       - name: Lint frontend
         run: npm run lint
 
+      - name: Rebuild native bindings
+        run: npm rebuild rolldown
+
       - name: Build frontend
+        env:
+          ROLLDOWN_NATIVE_RESOLVE: 1
         run: npm run build
 
       - name: Install backend dependencies
