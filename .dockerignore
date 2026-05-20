@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.github
+*.png
+*.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+docker-entrypoint.sh
+.vscode
+.idea

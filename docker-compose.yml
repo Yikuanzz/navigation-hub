@@ -1,0 +1,25 @@
+services:
+  navhub:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/yikuanzz/navigation-hub:latest
+    container_name: navhub
+    ports:
+      - "3001:3001"
+    volumes:
+      - navhub-data:/app/server/data
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - DATA_DIR=/app/server/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3001/api/items"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  navhub-data:
