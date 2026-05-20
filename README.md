@@ -1,7 +1,7 @@
 # NavHub - 智能导航中心
 
 <p align="center">
-  <img src="docs/screenshots/home.png" alt="NavHub 首页" width="800">
+  <img src="src/assets/logo.svg" alt="NavHub" width="80" height="80">
 </p>
 
 <p align="center">
@@ -25,33 +25,13 @@
 
 ## 界面预览
 
-### 首页浏览
+| 首页浏览 | 编辑模式 |
+|:--------:|:--------:|
+| <img src="docs/screenshots/home.png" alt="首页" width="400"> | <img src="docs/screenshots/edit-mode.png" alt="编辑模式" width="400"> |
 
-<p align="center">
-  <img src="docs/screenshots/home.png" alt="首页" width="800">
-</p>
-
-### 编辑模式
-
-<p align="center">
-  <img src="docs/screenshots/edit-mode.png" alt="编辑模式" width="800">
-</p>
-
-### 添加/编辑导航
-
-<p align="center">
-  <img src="docs/screenshots/add-modal.png" alt="添加导航弹窗" width="600">
-</p>
-
-### 分类与标签管理
-
-<p align="center">
-  <img src="docs/screenshots/custom-select.png" alt="图标选择器" width="600">
-</p>
-
-<p align="center">
-  <img src="docs/screenshots/tag-manager.png" alt="标签管理" width="600">
-</p>
+| 添加导航 | 分类下拉选择 | 标签管理 |
+|:--------:|:------------:|:--------:|
+| <img src="docs/screenshots/add-modal.png" alt="添加导航" width="260"> | <img src="docs/screenshots/custom-select.png" alt="分类下拉选择" width="260"> | <img src="docs/screenshots/tag-manager.png" alt="标签管理" width="260"> |
 
 ## 技术栈
 
