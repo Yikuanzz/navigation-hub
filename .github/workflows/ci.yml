@@ -25,7 +25,7 @@ jobs:
           cache: 'npm'
 
       - name: Install frontend dependencies
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Install rolldown Linux binding
         run: npm install @rolldown/binding-linux-x64-gnu --no-save
@@ -41,7 +41,7 @@ jobs:
 
       - name: Install backend dependencies
         working-directory: ./server
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Build backend
         working-directory: ./server
