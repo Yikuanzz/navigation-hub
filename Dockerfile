@@ -26,7 +26,6 @@ RUN npm install -g serve
 COPY --from=backend-builder /app/server/dist ./server/dist
 COPY --from=backend-builder /app/server/package*.json ./server/
 COPY --from=backend-builder /app/server/node_modules ./server/node_modules
-COPY --from=backend-builder /app/server/data ./server/data
 
 # Copy frontend static files
 COPY --from=frontend-builder /app/dist ./dist
